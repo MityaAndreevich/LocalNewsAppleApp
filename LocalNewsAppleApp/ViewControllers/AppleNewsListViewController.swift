@@ -9,9 +9,12 @@ import UIKit
 
 class AppleNewsListViewController: UITableViewController {
 
+    var appleNews: [AppleNews] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        tableView.rowHeight = 80
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -22,24 +25,33 @@ class AppleNewsListViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        2
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        appleNews.count
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        appleNews[section].header
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-        // Configure the cell...
+        let news = appleNews[indexPath.section]
+        var content = cell.defaultContentConfiguration()
+        
+        content.text = news.brief
+        content.image = UIImage(named: news.header)
+        content.imageProperties.cornerRadius = tableView.rowHeight / 2
+        
+        cell.contentConfiguration = content
 
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.
@@ -57,7 +69,7 @@ class AppleNewsListViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
     */
 

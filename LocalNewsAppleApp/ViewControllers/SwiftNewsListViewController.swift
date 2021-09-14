@@ -9,6 +9,8 @@ import UIKit
 
 class SwiftNewsListViewController: UITableViewController {
 
+    var swiftNews: [SwiftNews] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,24 +24,31 @@ class SwiftNewsListViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 2
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        swiftNews[section].header
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        swiftNews.count
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        // Configure the cell...
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        let news = swiftNews[indexPath.row]
+        var content = cell.defaultContentConfiguration()
+        
+        content.text = news.brief
+        content.secondaryText = news.date
+        cell.contentConfiguration = content
 
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.
@@ -57,7 +66,7 @@ class SwiftNewsListViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
     */
 

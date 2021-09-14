@@ -13,6 +13,7 @@ struct AppleNews {
     let date: String
     let raiting: String
 }
+
 extension AppleNews {
     static func getNewsList() -> [AppleNews] {
         var allAppleNews: [AppleNews] = []
