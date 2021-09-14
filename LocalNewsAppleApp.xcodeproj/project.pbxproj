@@ -13,6 +13,12 @@
 		5F28570D26F0FD2400F3D36E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F28570B26F0FD2400F3D36E /* Main.storyboard */; };
 		5F28570F26F0FD2400F3D36E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F28570E26F0FD2400F3D36E /* Assets.xcassets */; };
 		5F28571226F0FD2400F3D36E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F28571026F0FD2400F3D36E /* LaunchScreen.storyboard */; };
+		5F28572026F103E400F3D36E /* TapBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F28571F26F103E400F3D36E /* TapBarViewController.swift */; };
+		5F28572226F1044C00F3D36E /* AppleNewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F28572126F1044C00F3D36E /* AppleNewsListViewController.swift */; };
+		5F28572426F1047500F3D36E /* SwiftNewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F28572326F1047500F3D36E /* SwiftNewsListViewController.swift */; };
+		5F28572626F1048E00F3D36E /* AppleNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F28572526F1048E00F3D36E /* AppleNews.swift */; };
+		5F28572826F104A800F3D36E /* SwiftNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F28572726F104A800F3D36E /* SwiftNews.swift */; };
+		5F28572A26F104B900F3D36E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F28572926F104B900F3D36E /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		5F28570E26F0FD2400F3D36E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F28571126F0FD2400F3D36E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F28571326F0FD2400F3D36E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F28571F26F103E400F3D36E /* TapBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBarViewController.swift; sourceTree = "<group>"; };
+		5F28572126F1044C00F3D36E /* AppleNewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleNewsListViewController.swift; sourceTree = "<group>"; };
+		5F28572326F1047500F3D36E /* SwiftNewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNewsListViewController.swift; sourceTree = "<group>"; };
+		5F28572526F1048E00F3D36E /* AppleNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleNews.swift; sourceTree = "<group>"; };
+		5F28572726F104A800F3D36E /* SwiftNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNews.swift; sourceTree = "<group>"; };
+		5F28572926F104B900F3D36E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,69 @@
 		5F28570426F0FD2400F3D36E /* LocalNewsAppleApp */ = {
 			isa = PBXGroup;
 			children = (
-				5F28570526F0FD2400F3D36E /* AppDelegate.swift */,
-				5F28570726F0FD2400F3D36E /* SceneDelegate.swift */,
-				5F28570926F0FD2400F3D36E /* ViewController.swift */,
-				5F28570B26F0FD2400F3D36E /* Main.storyboard */,
-				5F28570E26F0FD2400F3D36E /* Assets.xcassets */,
-				5F28571026F0FD2400F3D36E /* LaunchScreen.storyboard */,
-				5F28571326F0FD2400F3D36E /* Info.plist */,
+				5F28571926F0FF1700F3D36E /* ViewControllers */,
+				5F28571D26F0FF8F00F3D36E /* Models */,
+				5F28571E26F0FF9B00F3D36E /* Services */,
+				5F28571A26F0FF3000F3D36E /* Storyboards */,
+				5F28571B26F0FF5D00F3D36E /* App */,
+				5F28571C26F0FF7F00F3D36E /* Resources */,
 			);
 			path = LocalNewsAppleApp;
+			sourceTree = "<group>";
+		};
+		5F28571926F0FF1700F3D36E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5F28570926F0FD2400F3D36E /* ViewController.swift */,
+				5F28571F26F103E400F3D36E /* TapBarViewController.swift */,
+				5F28572126F1044C00F3D36E /* AppleNewsListViewController.swift */,
+				5F28572326F1047500F3D36E /* SwiftNewsListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5F28571A26F0FF3000F3D36E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5F28570B26F0FD2400F3D36E /* Main.storyboard */,
+				5F28571026F0FD2400F3D36E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5F28571B26F0FF5D00F3D36E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5F28570526F0FD2400F3D36E /* AppDelegate.swift */,
+				5F28570726F0FD2400F3D36E /* SceneDelegate.swift */,
+				5F28571326F0FD2400F3D36E /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5F28571C26F0FF7F00F3D36E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5F28570E26F0FD2400F3D36E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5F28571D26F0FF8F00F3D36E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5F28572526F1048E00F3D36E /* AppleNews.swift */,
+				5F28572726F104A800F3D36E /* SwiftNews.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5F28571E26F0FF9B00F3D36E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5F28572926F104B900F3D36E /* DataManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +204,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F28570A26F0FD2400F3D36E /* ViewController.swift in Sources */,
+				5F28572426F1047500F3D36E /* SwiftNewsListViewController.swift in Sources */,
+				5F28572626F1048E00F3D36E /* AppleNews.swift in Sources */,
 				5F28570626F0FD2400F3D36E /* AppDelegate.swift in Sources */,
+				5F28572826F104A800F3D36E /* SwiftNews.swift in Sources */,
+				5F28572026F103E400F3D36E /* TapBarViewController.swift in Sources */,
+				5F28572226F1044C00F3D36E /* AppleNewsListViewController.swift in Sources */,
+				5F28572A26F104B900F3D36E /* DataManager.swift in Sources */,
 				5F28570826F0FD2400F3D36E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +360,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SLQ3BB6947;
-				INFOPLIST_FILE = LocalNewsAppleApp/Info.plist;
+				INFOPLIST_FILE = LocalNewsAppleApp/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dmitry.LocalNewsAppleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +379,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SLQ3BB6947;
-				INFOPLIST_FILE = LocalNewsAppleApp/Info.plist;
+				INFOPLIST_FILE = LocalNewsAppleApp/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +387,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dmitry.LocalNewsAppleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
