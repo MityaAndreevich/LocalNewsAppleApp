@@ -13,7 +13,8 @@ class SwiftNewsListViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        tableView.rowHeight = 100
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -24,7 +25,7 @@ class SwiftNewsListViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        swiftNews.count
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -32,7 +33,7 @@ class SwiftNewsListViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        swiftNews.count
+        1
     }
 
 
@@ -44,6 +45,7 @@ class SwiftNewsListViewController: UITableViewController {
         
         content.text = news.brief
         content.secondaryText = news.date
+        content.image = UIImage(named: news.header)
         cell.contentConfiguration = content
 
         return cell

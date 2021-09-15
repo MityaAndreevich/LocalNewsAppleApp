@@ -25,11 +25,11 @@ class AppleNewsListViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        2
+        appleNews.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        appleNews.count
+        1
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -44,6 +44,7 @@ class AppleNewsListViewController: UITableViewController {
         var content = cell.defaultContentConfiguration()
         
         content.text = news.brief
+        content.secondaryText = news.date
         content.image = UIImage(named: news.header)
         content.imageProperties.cornerRadius = tableView.rowHeight / 2
         
