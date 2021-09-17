@@ -43,20 +43,20 @@
         <scene sceneID="F1A-5G-9p7">
             <objects>
                 <tableViewController id="TgN-Pr-xOa" customClass="AppleNewsListViewController" customModule="LocalNewsAppleApp" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hXw-yM-R52">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="60" sectionFooterHeight="-1" estimatedSectionFooterHeight="60" id="hXw-yM-R52">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="hS9-CN-hke">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="AB3-sX-np7">
                                 <rect key="frame" x="0.0" y="24.5" width="320" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hS9-CN-hke" id="Waa-Ah-CkM">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AB3-sX-np7" id="v2V-Jj-AqU">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="c7p-gZ-O7u" kind="show" trigger="accessoryAction" id="FN5-6T-cAi"/>
+                                    <segue destination="c7p-gZ-O7u" kind="show" id="bx7-D3-wla"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -70,7 +70,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gDu-gt-tJ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1774" y="595"/>
+            <point key="canvasLocation" x="1773.75" y="594.71830985915494"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xHD-a8-k6Q">
@@ -142,6 +142,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="c7p-gZ-O7u" kind="show" id="9No-TZ-deT"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -156,6 +159,9 @@
             <point key="canvasLocation" x="1774" y="1299"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bx7-D3-wla"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="applelogo" catalog="system" width="103" height="128"/>
         <image name="swift" catalog="system" width="128" height="106"/>

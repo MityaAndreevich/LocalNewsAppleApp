@@ -10,12 +10,12 @@ class DataManager {
     static let shared = DataManager()
     
     let headersApple = [
-        "Названа дата выхода iOS 15",
+        "Названа дата выхода IOS 15",
         "Плановое обновление линейки",
-        "iPhone 13 — уменьшенная монобровь, новый дисплей",
-        "iPhone 13 Pro и 13 Pro Max — самые дорогие в истории",
-        "iPad mini — первый редизайн за 9 лет",
-        "Apple Watch — увеличенный экран"
+        "iPhone 13 - уменьшенная монобровь, новый дисплей",
+        "iPhone 13 Pro и 13 Pro Max - самые дорогие в истории",
+        "iPad mini - первый редизайн за 9 лет",
+        "Apple Watch - увеличенный экран"
     ]
     
     let briefsApple = [
@@ -37,17 +37,41 @@ class DataManager {
         "4.0", "2.1", "3.1"
     ]
     
-    let headersSwift = ["Header Swift 1",
-                   "Header Swift 2"]
+    let headersSwift = [
+        "Package Collections",
+        "Swift 5.4 released!",
+        "Swift Collections",
+        "Diversity in Swift",
+        "SwiftNIO SSH",
+        "Swift Algorithms"
+    ]
     
-    let briefsSwift = ["Brief Swift 1",
-                  "Brief Swift 2"]
+    let briefsSwift = [
+        "The Swift Package Manager adds support for package collections.",
+        "Variety of languge and tooling improvements.",
+        "New functionality for the Swift Standart Library.",
+        "Making it easier for developers to start learning or contributing to Swift.",
+        "New project in Swift Server ecosystem.",
+        "New open source package of algorithms along with their related types."
+    ]
     
-    let datesSwift = ["13.09.21",
-                 "14.09.21"]
+    let datesSwift = [
+        "07.06.2021",
+        "26.04.2021",
+        "05.04.2021",
+        "16.12.2020",
+        "11.11.2020",
+        "21.10.2020"
+    ]
     
-    let raitingsSwift = ["5.0",
-                    "4.0"]
+    let raitingsSwift = [
+        "5.0",
+        "4.0",
+        "2.0",
+        "4.3",
+        "2.7",
+        "3.3"
+    ]
     
     private init() {}
 }

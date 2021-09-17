@@ -19,6 +19,7 @@
 		5F28572626F1048E00F3D36E /* AppleNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F28572526F1048E00F3D36E /* AppleNews.swift */; };
 		5F28572826F104A800F3D36E /* SwiftNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F28572726F104A800F3D36E /* SwiftNews.swift */; };
 		5F28572A26F104B900F3D36E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F28572926F104B900F3D36E /* DataManager.swift */; };
+		5F28573426F53E3100F3D36E /* DetailedNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F28573326F53E3100F3D36E /* DetailedNewsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		5F28572526F1048E00F3D36E /* AppleNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleNews.swift; sourceTree = "<group>"; };
 		5F28572726F104A800F3D36E /* SwiftNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNews.swift; sourceTree = "<group>"; };
 		5F28572926F104B900F3D36E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		5F28573326F53E3100F3D36E /* DetailedNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedNewsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				5F28571F26F103E400F3D36E /* TapBarViewController.swift */,
 				5F28572126F1044C00F3D36E /* AppleNewsListViewController.swift */,
 				5F28572326F1047500F3D36E /* SwiftNewsListViewController.swift */,
+				5F28573326F53E3100F3D36E /* DetailedNewsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				5F28572026F103E400F3D36E /* TapBarViewController.swift in Sources */,
 				5F28572226F1044C00F3D36E /* AppleNewsListViewController.swift in Sources */,
 				5F28572A26F104B900F3D36E /* DataManager.swift in Sources */,
+				5F28573426F53E3100F3D36E /* DetailedNewsViewController.swift in Sources */,
 				5F28570826F0FD2400F3D36E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Header Swift 1.jpg",
+      "filename" : "iPad mini - первый редизайн за 9 лет.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "iPad mini - первый редизайн за 9 лет@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "iPad mini - первый редизайн за 9 лет@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

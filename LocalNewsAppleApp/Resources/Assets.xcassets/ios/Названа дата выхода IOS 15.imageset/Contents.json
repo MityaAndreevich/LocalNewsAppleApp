@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "iPhone 13 - уменьшенная монобровь, новый дисплей.jpg",
+      "filename" : "Названа дата выхода IOS 15.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Названа дата выхода IOS 15@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Названа дата выхода IOS 15@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }
