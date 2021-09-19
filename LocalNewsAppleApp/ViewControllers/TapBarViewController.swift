@@ -17,11 +17,17 @@ class TabBarViewController: UITabBarController {
     private func setupViewControllers() {
         let appleNews = AppleNews.getNewsList()
         let swiftNews = SwiftNews.getNewsList()
-        guard let appleNewsVC = viewControllers?.first as? AppleNewsListViewController else { return }
-        guard let swiftNewsVC = viewControllers?.last as? SwiftNewsListViewController else { return }
+        let appleTestNews = AppleNews.getNewsList()
+        
+        
+        guard let appleNewsVC = viewControllers?[0] as? AppleNewsListViewController else { return }
+        guard let swiftNewsVC = viewControllers?[1] as? SwiftNewsListViewController else { return }
+        guard let appleTestNewsVC = viewControllers?[2] as? TestingTableViewController else { return }
         
         appleNewsVC.appleNews = appleNews
         swiftNewsVC.swiftNews = swiftNews
+        
+        appleTestNewsVC.appleTestNews = appleTestNews
         
     }
 }
