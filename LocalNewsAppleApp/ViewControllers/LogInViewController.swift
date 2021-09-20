@@ -23,7 +23,7 @@ class LogInViewController: UIViewController {
     @IBOutlet var loginButton: UIButton!
     
     // MARK: - Private Properties
-    private var users = User.getUsers()
+    private var users = User.getUser()
     
     // MARK: - Life Cycles Methods
     override func viewDidLoad() {
@@ -73,14 +73,14 @@ class LogInViewController: UIViewController {
 }
 
 // MARK: - RegistationViewControllerDelegate
-extension LoginViewController: RegistrationViewControllerDelegate {
+extension LogInViewController: RegistrationViewControllerDelegate {
     func getLoginDetails(email: String, password: String) {
         users.append(User(email: email, password: password))
     }
 }
 
 // MARK: - UITextFieldDelegate
-extension LoginViewController: UITextFieldDelegate {
+extension LogInViewController: UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super .touchesBegan(touches, with: event)
         view.endEditing(true)

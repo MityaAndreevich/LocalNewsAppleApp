@@ -23,6 +23,7 @@
 		5F28573626F76A3900F3D36E /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F28573526F76A3900F3D36E /* CustomTableViewCell.swift */; };
 		5F28573826F784E100F3D36E /* TestingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F28573726F784E100F3D36E /* TestingTableViewController.swift */; };
 		5F28573A26F7D58900F3D36E /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F28573926F7D58900F3D36E /* RegistrationViewController.swift */; };
+		5F28573C26F8DD6D00F3D36E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F28573B26F8DD6D00F3D36E /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		5F28573526F76A3900F3D36E /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		5F28573726F784E100F3D36E /* TestingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingTableViewController.swift; sourceTree = "<group>"; };
 		5F28573926F7D58900F3D36E /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		5F28573B26F8DD6D00F3D36E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			children = (
 				5F28572526F1048E00F3D36E /* AppleNews.swift */,
 				5F28572726F104A800F3D36E /* SwiftNews.swift */,
+				5F28573B26F8DD6D00F3D36E /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				5F28572626F1048E00F3D36E /* AppleNews.swift in Sources */,
 				5F28573A26F7D58900F3D36E /* RegistrationViewController.swift in Sources */,
 				5F28570626F0FD2400F3D36E /* AppDelegate.swift in Sources */,
+				5F28573C26F8DD6D00F3D36E /* User.swift in Sources */,
 				5F28572826F104A800F3D36E /* SwiftNews.swift in Sources */,
 				5F28572026F103E400F3D36E /* TapBarViewController.swift in Sources */,
 				5F28572226F1044C00F3D36E /* AppleNewsListViewController.swift in Sources */,

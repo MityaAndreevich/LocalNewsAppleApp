@@ -14,7 +14,7 @@ class TestingTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "CustomTableViewCell")
+        //tableView.register(UITableViewCell.self, forCellReuseIdentifier: "CustomTableViewCell")
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -56,10 +56,10 @@ class TestingTableViewController: UITableViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    //override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-    }
+    //}
     
 
 }
